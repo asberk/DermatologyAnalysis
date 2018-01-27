@@ -13,7 +13,7 @@ from data.descriptions import all_cols, class_labels
 # Load Data
 # -----------------------------------------------------------------------------
 
-df = pd.read_csv("data/dermatology.data.txt", header=None, na_values='?')
+df = pd.read_csv("data/dermatology.csv", header=None, na_values='?')
 
 # -----------------------------------------------------------------------------
 # Clean Data
