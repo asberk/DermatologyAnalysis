@@ -4,8 +4,6 @@
     ~~~~~~~~~~~~~~
 
 """
-import json
-import numpy as np
 import pandas as pd
 from data.descriptions import all_cols, class_labels
 
