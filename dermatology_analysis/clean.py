@@ -17,10 +17,10 @@ df = pd.read_csv("data/dermatology.csv", na_values='?')
 # Clean Data
 # -----------------------------------------------------------------------------
 
-# Update col names
+# Update column names
 df.columns = [all_cols[int(i) + 1] for i in df.columns]
 
-# make the disease labels human readable
+# Make the disease labels human readable
 df["disease"] = df["disease"].replace(class_labels)
 
 # -----------------------------------------------------------------------------
