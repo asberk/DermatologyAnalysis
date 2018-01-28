@@ -49,3 +49,7 @@ $ jupyter notebook
 
 > You can ue `Kernel` > `Restart and Run All` in the
 > menu bar to run the notebook from scratch.
+
+## About
+
+Tariq Hassan, Jan. 2018.
