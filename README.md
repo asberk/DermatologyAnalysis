@@ -35,12 +35,6 @@ git clone https://github.com/TariqAHassan/DermatologyAnalysis.git
 $ python3 data/download.py
 ```
 
-### Generate R Plots
-
-```bash
-$ Rscript dermatology_analysis/r_vizualizations.R
-```
-
 ### Load the notebook
 
 ```bash
@@ -49,6 +43,12 @@ $ jupyter notebook
 
 > You can ue `Kernel` > `Restart and Run All` in the
 > menu bar to run the notebook from scratch.
+
+> If you'd like to generate the single plot I created in R again, you can run:
+
+```bash
+$ Rscript dermatology_analysis/r_vizualizations.R
+```
 
 ## About
 
