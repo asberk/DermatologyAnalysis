@@ -5,7 +5,7 @@
 
 """
 import pandas as pd
-from data.descriptions import all_cols, class_labels
+from data.descriptions import all_cols, clinical, class_labels
 
 # -----------------------------------------------------------------------------
 # Load Data
@@ -20,5 +20,11 @@ df = pd.read_csv("data/dermatology.csv", na_values='?')
 # Update col names
 df.columns = [all_cols[int(i) + 1] for i in df.columns]
 
-# make the labels human readable
-df["label"] = df["label"].replace(class_labels)
+# make the disease labels human readable
+df["disease"] = df["disease"].replace(class_labels)
+
+# -----------------------------------------------------------------------------
+# Subset to Clinical Columns
+# -----------------------------------------------------------------------------
+
+df = df[["disease"] + list(clinical.values())]
