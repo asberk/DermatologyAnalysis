@@ -50,14 +50,14 @@ hist = {
 }
 
 all_cols = {**clinical, **hist}
-all_cols[35] = "label"
+all_cols[35] = "disease"
 
 # Class Labels ---
 class_labels = {
-    1: "psoriasis",
-    2: "seboreic_dermatitis",
-    3: "lichen_planus",
-    4: "pityriasis_rosea",
-    5: "cronic_dermatitis",
-    6: "pityriasis_rubra_pilaris"
+    1: "Psoriasis",
+    2: "Seboreic Dermatitis",
+    3: "Lichen Planus",
+    4: "Pityriasis Rosea",
+    5: "Cronic Dermatitis",
+    6: "Pityriasis Rubra Pilaris"
 }
